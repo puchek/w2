@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Книги</title>
+
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+
+    <!--<link rel="stylesheet" href="css/deb.css" type="text/css" media="screen">-->
+
+    <style>
+        .label {
+            /*vertical-align: middle;*/
+            /*outline:  1px solid #0066cc;*/
+            width: 60px;
+            float: left;
+            margin: 0.5em;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="span-24 last">
+        <h1>Книги</h1>
+        <h2>Выбирай и читай</h2>
+    </div>
+
+    <div id="navigate" class="span-24  last">
+        <div id="indexBooks" class="span-8">
+            <a href="#">Перечень книг</a>
+        </div>
+
+        <div id="loginInfo" class="span-16 last">
+            <a href="#">Войти</a>
+        </div>
+    </div>
+
+    <div class="span-20">
+        <form id="loginForm" class="inline" action="/t3" method="get">
+            <fieldset>
+                <legend>Введите имя и пароль</legend>
+                <label for="dummy0" class="label">Имя</label>
+                <input type="text" class="title " name="dummy0" id="dummy0">
+                <br>
+                <label for="dummy1" class="label">Пароль</label>
+                <input type="password" class="title" name="dummy12" id="dummy1">
+                <br>
+                <input type="submit" value="Войти">
+                <input type="reset" >
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
