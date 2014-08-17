@@ -12,14 +12,18 @@
     <style>
         .label {
             /*vertical-align: middle;*/
-            outline:  1px solid #0066cc;
+            /*outline:  1px solid #0066cc;*/
+            width: 60px;
+            float: left;
+            margin: 0.5em;
+            text-align: right;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container showgrid">
+<div class="container">
 
     <div class="span-24 last">
         <h1>Книги</h1>
@@ -37,17 +41,17 @@
     </div>
 
     <div class="span-20">
-        <form id="loginForm" class="inline" action method="POST">
+        <form id="loginForm" class="inline" action="/t3" method="get">
             <fieldset>
-                <legend>Name/password</legend>
-                <label for="dummy0" class="label">Login</label>
-                <input type="text" class="title prepend-3" name="dummy0" id="dummy0" value="Field with class .title">
+                <legend>Введите имя и пароль</legend>
+                <label for="dummy0" class="label">Имя</label>
+                <input type="text" class="title " name="dummy0" id="dummy0">
                 <br>
-                <label for="dummy1" class="label">Password</label>
-                <input type="password" class="title prepend-3" name="dummy12" id="dummy1" value="Field with class .title">
+                <label for="dummy1" class="label">Пароль</label>
+                <input type="password" class="title" name="dummy12" id="dummy1">
                 <br>
-                <input type="submit" value="Submit">
-                <input type="reset"  value="reset">
+                <input type="submit" value="Войти">
+                <input type="reset" >
             </fieldset>
 
         </form>

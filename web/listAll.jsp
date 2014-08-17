@@ -14,7 +14,7 @@
 <body>
     Hello 2
     <ul>
-    <c:forEach var="p" items="${personList}">
+    <c:forEach var="p" items="${productList}">
         <li>${p.productName}</li>
     </c:forEach>
     </ul>

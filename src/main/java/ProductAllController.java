@@ -13,8 +13,8 @@ public class ProductAllController extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         System.out.println("personDAO.getAll().size() = " + productDAO.getAll().size());
-        req.setAttribute("personList", productDAO.getAll());
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/listAll.jsp");
+        req.setAttribute("productList", productDAO.getAll());
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("t1.jsp");
         requestDispatcher.forward(req, resp);
     }
 }
