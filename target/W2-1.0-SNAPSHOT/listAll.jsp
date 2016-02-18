@@ -17,6 +17,7 @@
     <c:forEach var="p" items="${productList}">
         <li>${p.productName}</li>
     </c:forEach>
+
     </ul>
 </body>
 </html>
